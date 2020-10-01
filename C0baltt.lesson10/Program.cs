@@ -14,9 +14,16 @@ namespace C0baltt.lesson10
             var person1 = new Person("Иванов", "Иван");
             var person2 = new Person("Петров", "Петр");
 
-            for (var i = 0; i < 10; i++)
+            for (var i = 1; i <= 10; i++)
             {
-                var position = person1.Run();
+                Console.Write(i + ". ");
+                var position1 = person1.Run();
+                Console.Write(position1); 
+                Console.Write(" ");
+
+                var position2 = person2.Run();
+                Console.WriteLine(position2);
+
                 Console.WriteLine();
             }
 

@@ -18,9 +18,21 @@ namespace C0baltt.lesson10
             SecondName = secondName;
             Name = name;
 
-
             X = 0;
             Y = 0;
+        }
+
+        public string Run()
+        {
+            var rnd1 = new Random();
+
+            X += rnd1.Next(-7, 7);
+
+            //var rnd2 = new Random();
+
+            Y += rnd1.Next(-7, 7);
+
+            return $"{Name} ({X}, {Y})";
         }
 
 
