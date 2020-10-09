@@ -10,7 +10,7 @@ namespace C0baltt.lesson10
     {
         static void Main(string[] args)
         {
-            /*
+            
             var person1 = new Person("Иванов", "Иван");
             var person2 = new Person("Петров", "Петр");
 
@@ -28,34 +28,37 @@ namespace C0baltt.lesson10
             }
 
             Console.WriteLine();
-            Console.ReadLine(); */
-
-            Console.WriteLine("Factorial(a)");
-
-            //int a = 0;
-
-            int a = Convert.ToInt32(Console.ReadLine());//преобразование типа string в int 
-
-            Console.WriteLine(Factorial(a));
-
-             int Factorial(int value)
+            Console.ReadLine(); 
+            /*for (byte i = 1; i <= 10; i++)
             {
-                
-                if (value <= 1)
-                {
-                    
-                    return 1;
-                }
-                else
-                {
-                    
-                    return value * Factorial(value - 1);
-                }
+                Console.WriteLine($"Factorial(a) {i}.");
 
-                //модификатор_доступа тип_возвращаемого_значения имя_метода(тип_аргумента1 имя аргумента1, тип_аргумента2 имя аргумента2)
-               
+                //int a = 0;
+
+                ulong a = Convert.ToUInt64(Console.ReadLine());//преобразование типа string в int 
+
+                Console.WriteLine(Factorial(a));
+
+                ulong Factorial(ulong value)
+                {
+
+                    if (value <= 1)
+                    {
+
+                        return 1;
+                    }
+                    else
+                    {
+
+                        return value * Factorial(value - 1);
+                    }
+
+                    //модификатор_доступа тип_возвращаемого_значения имя_метода(тип_аргумента1 имя аргумента1, тип_аргумента2 имя аргумента2)
+
+                }
+                
             }
-            Console.ReadLine();
+            Console.ReadLine();*/
         }
     }
 

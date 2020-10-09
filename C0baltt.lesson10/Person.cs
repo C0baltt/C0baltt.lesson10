@@ -24,13 +24,10 @@ namespace C0baltt.lesson10
 
         public string Run()
         {
-            var rnd1 = new Random();
+            var rnd = new Random();
 
-            X += rnd1.Next(-7, 7);
-
-            //var rnd2 = new Random();
-
-            Y += rnd1.Next(-7, 7);
+            X += rnd.Next(-7, 7);
+            Y += rnd.Next(-7, 7);
 
             return $"{Name} ({X}, {Y})";
         }
