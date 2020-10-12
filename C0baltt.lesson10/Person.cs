@@ -11,6 +11,7 @@ namespace C0baltt.lesson10
 
         public int X { get; set; }
 
+
         public int Y { get; set; }
 
         public Person(string secondName, string name)
@@ -26,8 +27,8 @@ namespace C0baltt.lesson10
         {
             var rnd = new Random();
 
-            X += rnd.Next(-7, 7);
-            Y += rnd.Next(-7, 7);
+            X += rnd.Next(-2, 2);
+            Y += rnd.Next(-2, 2);
 
             return $"{Name} ({X}, {Y})";
         }
